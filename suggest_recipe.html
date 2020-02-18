@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggest Recipe</title>
+</head>
+
+
+<h1>The Lazy Chef</h1>
+<p>Simple recipes to spend more time eating and less time cooking.</p>
+<hr>
+
+<body>
+    <h2>Suggest a Recipe</h2>
+    <p>We are always looking for delicious new recipes at <strong>The Lazy Chef</strong>. If you think you have something fantastic, please fill out the details below and we will get back to you.</p>
+
+    <form action = "some_server_script.py" method = "POST">
+
+        <div>
+            <label for = "chefname">Chef's Name</label><br>
+            <input type = "text" name = "chefname" id = "chefname" placeholder = "Full Name" size = 50>
+        </div>
+
+        <div>
+            <label for = "email">Email</label><br>
+            <input type ="email" name = "email" id = "email" placeholder = "Chef's Email" size = 50>
+        </div>
+
+        <div>
+            <label for = "recipename">Recipe Title</label><br>
+            <input type = "text" name = "title" id = "recipename" placeholder = "Short recipe title" size = 50>
+        </div>
+
+        <div>
+            <label for = "instructions">Recipe Instructions</label><br>
+            <textarea name = "instructions" id = "instructions" placeholder = "Provide detailed instructions" size = 1000></textarea>
+        </div>
+
+        <div>
+            <label>Recipe Difficulty</label><br>
+            <input type = "radio" name = "difficulty" value = "easy" id = "easy">
+            <label for = "easy">easy</label>
+            <input type = "radio" name = "difficulty" value = "medium" id = "medium">
+            <label for = "medium">medium</label>
+            <input type = "radio" name = "difficulty" value = "hard" id = "hard">
+            <label for = "hard">hard</label>
+        </div>
+
+        <div>
+            <label for = "food_category">Food Category</label><br>
+            <select name = "food_category" id = "food_category">
+                <option value="">---</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="dessert">Dessert</option>
+            </select>
+        </div>
+
+        <input type = "submit" value = "Submit Recipe">
+        <input type = "reset" value = "Cancel">
+
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>Copyright &copy; 2020</p>
+    </footer>   
+
+</body>
+
+</html>
